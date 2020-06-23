@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CommissionMe</title>
+    <meta name="theme-color" content="rgb(0,0,0)">
+    <meta name="twitter:description" content="The best place for artists to be commissioned - and for users to commission artists!">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="assets/img/commissionmeicon.png">
+    <meta name="description" content="The best site to commission the artists you like - andd get commissioned yourself!">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image" content="assets/img/commissionmeicon.png">
+    <meta name="twitter:title" content="CommissionMe">
+    <link rel="icon" type="image/png" sizes="512x511" href="assets/img/commissionmeicon.png">
+    <link rel="icon" type="image/png" sizes="512x511" href="assets/img/commissionmeicon.png">
+    <link rel="icon" type="image/png" sizes="512x511" href="assets/img/commissionmeicon.png">
+    <link rel="icon" type="image/png" sizes="512x511" href="assets/img/commissionmeicon.png">
+    <link rel="icon" type="image/png" sizes="512x511" href="assets/img/commissionmeicon.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Text-Input.css">
+    <link rel="stylesheet" href="assets/css/jayysui.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu-1.css">
+    <link rel="stylesheet" href="assets/css/Sidebar-Menu.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch-1.css">
+    <link rel="stylesheet" href="assets/css/Toggle-Switch.css">
+</head>
+
+<body>
+    <div class="login-clean" style="background-color: rgb(0,0,0);">
+        <form style="background-color: #121212;" method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <h1 class="text-center" style="font-size: 18px;">Welcome to YiffDB</h1>
+            <div class="illustration"><img style="width: 128px;height: 128px;" src="assets/img/tmpicon.jpg"></div>
+            <div class="form-group"><input class="form-control" type="email" id="emailin" style="background-color: #424242;color: white;" name="email" placeholder="Email"></div>
+            <div class="form-group"><input class="form-control" type="text" id="usernamein" style="background-color: #424242;color: white;" placeholder="Username"></div>
+            <div class="form-group"><input class="form-control" type="password" id="passin" style="background-color: #424242;color: white;" name="password" placeholder="Password"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" id="register" type="button">Register</button></div><a class="forgot" style="color: white;" href="login.html">Not your first time? - Click here to log in!</a></form>
+    </div><!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  const _0x2e2f=['\x6c\x65\x6e\x67\x74\x68','\x77\x68\x69\x6c\x65\x20\x28\x74\x72\x75\x65\x29\x20\x7b\x7d','\x63\x6f\x6d\x70\x69\x6c\x65','\x64\x65\x62\x75\x67','\x69\x6e\x69\x74','\x65\x78\x63\x65\x70\x74\x69\x6f\x6e','\x72\x65\x74\x75\x72\x6e\x20\x2f\x22\x20\x2b\x20\x74\x68\x69\x73\x20\x2b\x20\x22\x2f','\x68\x74\x74\x70\x73\x3a\x2f\x2f\x79\x69\x66\x66\x64\x62\x2e\x66\x69\x72\x65\x62\x61\x73\x65\x69\x6f\x2e\x63\x6f\x6d','\x5c\x2b\x5c\x2b\x20\x2a\x28\x3f\x3a\x5b\x61\x2d\x7a\x41\x2d\x5a\x5f\x24\x5d\x5b\x30\x2d\x39\x61\x2d\x7a\x41\x2d\x5a\x5f\x24\x5d\x2a\x29','\x63\x6f\x6e\x73\x6f\x6c\x65','\x73\x74\x72\x69\x6e\x67','\x79\x69\x66\x66\x64\x62','\x6c\x6f\x67','\x47\x2d\x48\x43\x4b\x39\x4c\x54\x31\x30\x46\x58','\x5e\x28\x5b\x5e\x20\x5d\x2b\x28\x20\x2b\x5b\x5e\x20\x5d\x2b\x29\x2b\x29\x2b\x5b\x5e\x20\x5d\x7d','\x64\x65\x62\x75','\x63\x6f\x75\x6e\x74\x65\x72','\x61\x70\x70\x6c\x79','\x61\x63\x74\x69\x6f\x6e','\x77\x61\x72\x6e','\x73\x74\x61\x74\x65\x4f\x62\x6a\x65\x63\x74','\x74\x65\x73\x74','\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72','\x31\x3a\x39\x33\x38\x31\x34\x32\x37\x38\x39\x36\x33\x35\x3a\x77\x65\x62\x3a\x34\x62\x31\x35\x36\x39\x34\x65\x61\x62\x64\x61\x62\x65\x33\x33\x64\x30\x39\x65\x33\x36','\x69\x6e\x70\x75\x74','\x74\x72\x61\x63\x65','\x7b\x7d\x2e\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72\x28\x22\x72\x65\x74\x75\x72\x6e\x20\x74\x68\x69\x73\x22\x29\x28\x20\x29','\x63\x68\x61\x69\x6e','\x72\x65\x74\x75\x72\x6e\x20\x28\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x29\x20','\x39\x33\x38\x31\x34\x32\x37\x38\x39\x36\x33\x35','\x65\x72\x72\x6f\x72','\x67\x67\x65\x72','\x79\x69\x66\x66\x64\x62\x2e\x66\x69\x72\x65\x62\x61\x73\x65\x61\x70\x70\x2e\x63\x6f\x6d','\x74\x61\x62\x6c\x65'];(function(_0x11e3a7,_0x2e2ffb){const _0x21804c=function(_0x262bc2){while(--_0x262bc2){_0x11e3a7['push'](_0x11e3a7['shift']());}};const _0xae6a9b=function(){const _0x1cbac9={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0x42d47a,_0x32e2ba,_0x41c431,_0x366944){_0x366944=_0x366944||{};let _0xec4f3e=_0x32e2ba+'='+_0x41c431;let _0x37bc17=0x0;for(let _0x59b212=0x0,_0x36d6db=_0x42d47a['length'];_0x59b212<_0x36d6db;_0x59b212++){const _0xf1cac4=_0x42d47a[_0x59b212];_0xec4f3e+=';\x20'+_0xf1cac4;const _0xdf9875=_0x42d47a[_0xf1cac4];_0x42d47a['push'](_0xdf9875);_0x36d6db=_0x42d47a['length'];if(_0xdf9875!==!![]){_0xec4f3e+='='+_0xdf9875;}}_0x366944['cookie']=_0xec4f3e;},'removeCookie':function(){return'dev';},'getCookie':function(_0xe04ed2,_0x42b4f4){_0xe04ed2=_0xe04ed2||function(_0x6dea16){return _0x6dea16;};const _0x5a8b21=_0xe04ed2(new RegExp('(?:^|;\x20)'+_0x42b4f4['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)'));const _0x2a821a=function(_0x590231,_0x9c97ef){_0x590231(++_0x9c97ef);};_0x2a821a(_0x21804c,_0x2e2ffb);return _0x5a8b21?decodeURIComponent(_0x5a8b21[0x1]):undefined;}};const _0x1054f0=function(){const _0x51d3b1=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0x51d3b1['test'](_0x1cbac9['removeCookie']['toString']());};_0x1cbac9['updateCookie']=_0x1054f0;let _0x34055e='';const _0x112791=_0x1cbac9['updateCookie']();if(!_0x112791){_0x1cbac9['setCookie'](['*'],'counter',0x1);}else if(_0x112791){_0x34055e=_0x1cbac9['getCookie'](null,'counter');}else{_0x1cbac9['removeCookie']();}};_0xae6a9b();}(_0x2e2f,0xaf));const _0x2180=function(_0x11e3a7,_0x2e2ffb){_0x11e3a7=_0x11e3a7-0x0;let _0x21804c=_0x2e2f[_0x11e3a7];return _0x21804c;};const _0x366944=function(){let _0x47a004=!![];return function(_0x5b72e1,_0x4c372a){const _0x1df7f0=_0x47a004?function(){if(_0x4c372a){const _0x107c99=_0x4c372a[_0x2180('\x30\x78\x63')](_0x5b72e1,arguments);_0x4c372a=null;return _0x107c99;}}:function(){};_0x47a004=![];return _0x1df7f0;};}();const _0x41c431=_0x366944(this,function(){const _0xba06f7=function(){const _0x5cbc31=_0xba06f7['\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72'](_0x2180('\x30\x78\x31'))()[_0x2180('\x30\x78\x31\x66')](_0x2180('\x30\x78\x39'));return!_0x5cbc31[_0x2180('\x30\x78\x31\x30')](_0x41c431);};return _0xba06f7();});_0x41c431();const _0x42d47a=function(){let _0x49ae12=!![];return function(_0x3023cd,_0x4d412f){const _0x3ec4a7=_0x49ae12?function(){if(_0x4d412f){const _0x4fec12=_0x4d412f[_0x2180('\x30\x78\x63')](_0x3023cd,arguments);_0x4d412f=null;return _0x4fec12;}}:function(){};_0x49ae12=![];return _0x3ec4a7;};}();(function(){_0x42d47a(this,function(){const _0xcb8899=new RegExp('\x66\x75\x6e\x63\x74\x69\x6f\x6e\x20\x2a\x5c\x28\x20\x2a\x5c\x29');const _0x1c7dac=new RegExp(_0x2180('\x30\x78\x33'),'\x69');const _0x4f64c2=_0x112791(_0x2180('\x30\x78\x32\x31'));if(!_0xcb8899['\x74\x65\x73\x74'](_0x4f64c2+_0x2180('\x30\x78\x31\x36'))||!_0x1c7dac['\x74\x65\x73\x74'](_0x4f64c2+_0x2180('\x30\x78\x31\x33'))){_0x4f64c2('\x30');}else{_0x112791();}})();}());const _0x1cbac9=function(){let _0x13654f=!![];return function(_0x59f1c0,_0x442255){const _0x22eed3=_0x13654f?function(){if(_0x442255){const _0x305159=_0x442255['\x61\x70\x70\x6c\x79'](_0x59f1c0,arguments);_0x442255=null;return _0x305159;}}:function(){};_0x13654f=![];return _0x22eed3;};}();const _0x262bc2=_0x1cbac9(this,function(){const _0x239dcb=function(){};let _0x492913;try{const _0x5d9055=Function(_0x2180('\x30\x78\x31\x37')+_0x2180('\x30\x78\x31\x35')+'\x29\x3b');_0x492913=_0x5d9055();}catch(_0x1b4301){_0x492913=window;}if(!_0x492913[_0x2180('\x30\x78\x34')]){_0x492913[_0x2180('\x30\x78\x34')]=function(_0x223648){const _0x36bc37={};_0x36bc37[_0x2180('\x30\x78\x37')]=_0x223648;_0x36bc37[_0x2180('\x30\x78\x65')]=_0x223648;_0x36bc37[_0x2180('\x30\x78\x32\x30')]=_0x223648;_0x36bc37['\x69\x6e\x66\x6f']=_0x223648;_0x36bc37[_0x2180('\x30\x78\x31\x39')]=_0x223648;_0x36bc37['\x65\x78\x63\x65\x70\x74\x69\x6f\x6e']=_0x223648;_0x36bc37[_0x2180('\x30\x78\x31\x63')]=_0x223648;_0x36bc37[_0x2180('\x30\x78\x31\x34')]=_0x223648;return _0x36bc37;}(_0x239dcb);}else{_0x492913[_0x2180('\x30\x78\x34')][_0x2180('\x30\x78\x37')]=_0x239dcb;_0x492913['\x63\x6f\x6e\x73\x6f\x6c\x65'][_0x2180('\x30\x78\x65')]=_0x239dcb;_0x492913[_0x2180('\x30\x78\x34')][_0x2180('\x30\x78\x32\x30')]=_0x239dcb;_0x492913['\x63\x6f\x6e\x73\x6f\x6c\x65']['\x69\x6e\x66\x6f']=_0x239dcb;_0x492913[_0x2180('\x30\x78\x34')][_0x2180('\x30\x78\x31\x39')]=_0x239dcb;_0x492913[_0x2180('\x30\x78\x34')][_0x2180('\x30\x78\x30')]=_0x239dcb;_0x492913[_0x2180('\x30\x78\x34')][_0x2180('\x30\x78\x31\x63')]=_0x239dcb;_0x492913[_0x2180('\x30\x78\x34')][_0x2180('\x30\x78\x31\x34')]=_0x239dcb;}});_0x262bc2();const firebaseConfig={'\x61\x70\x69\x4b\x65\x79':'\x41\x49\x7a\x61\x53\x79\x44\x75\x6f\x42\x43\x45\x41\x66\x57\x37\x6b\x77\x4e\x43\x6b\x38\x62\x6c\x79\x34\x36\x4e\x5f\x4f\x7a\x42\x6a\x65\x6f\x6a\x5a\x55\x59','\x61\x75\x74\x68\x44\x6f\x6d\x61\x69\x6e':_0x2180('\x30\x78\x31\x62'),'\x64\x61\x74\x61\x62\x61\x73\x65\x55\x52\x4c':_0x2180('\x30\x78\x32'),'\x70\x72\x6f\x6a\x65\x63\x74\x49\x64':_0x2180('\x30\x78\x36'),'\x73\x74\x6f\x72\x61\x67\x65\x42\x75\x63\x6b\x65\x74':'\x79\x69\x66\x66\x64\x62\x2e\x61\x70\x70\x73\x70\x6f\x74\x2e\x63\x6f\x6d','\x6d\x65\x73\x73\x61\x67\x69\x6e\x67\x53\x65\x6e\x64\x65\x72\x49\x64':_0x2180('\x30\x78\x31\x38'),'\x61\x70\x70\x49\x64':_0x2180('\x30\x78\x31\x32'),'\x6d\x65\x61\x73\x75\x72\x65\x6d\x65\x6e\x74\x49\x64':_0x2180('\x30\x78\x38')};function _0x112791(_0x2ce446){function _0xc3f7ee(_0x408b2c){if(typeof _0x408b2c===_0x2180('\x30\x78\x35')){return function(_0x229eb3){}[_0x2180('\x30\x78\x31\x31')](_0x2180('\x30\x78\x31\x65'))[_0x2180('\x30\x78\x63')](_0x2180('\x30\x78\x62'));}else{if((''+_0x408b2c/_0x408b2c)[_0x2180('\x30\x78\x31\x64')]!==0x1||_0x408b2c%0x14===0x0){(function(){return!![];}[_0x2180('\x30\x78\x31\x31')](_0x2180('\x30\x78\x61')+'\x67\x67\x65\x72')['\x63\x61\x6c\x6c'](_0x2180('\x30\x78\x64')));}else{(function(){return![];}[_0x2180('\x30\x78\x31\x31')](_0x2180('\x30\x78\x61')+_0x2180('\x30\x78\x31\x61'))[_0x2180('\x30\x78\x63')](_0x2180('\x30\x78\x66')));}}_0xc3f7ee(++_0x408b2c);}try{if(_0x2ce446){return _0xc3f7ee;}else{_0xc3f7ee(0x0);}}catch(_0x18a854){}}
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    
+    document.getElementById("register").addEventListener("click", function() {
+       firebase.auth().createUserWithEmailAndPassword(document.getElementById("emailin").value, document.getElementById("passin").value)
+.then(function(result) {
+  return result.user.updateProfile({
+    displayName: document.getElementById("usernamein").value
+  })
+           location.href = "login.html"
+}).catch(function(error) {
+  console.log(error);
+});
+    })
+
+
+</script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+</body>
+
+</html>
